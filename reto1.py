@@ -9,4 +9,9 @@ def calcular_paneles_solares ():
     #Calculo de la potencia diaria y anual generada por un panel solar
     potencia_diaria = area_panel * radiacion_solar * eficiencia_panel
     potencia_anual = potencia_diaria * 365 #No aplica para año bisiesto 
-
+    #Calculo para conocer la cantidad de paneles necesarios
+    paneles_necesarios = consumo_anual / potencia_anual
+    paneles_necesarios_redondeo = round (paneles_necesarios)
+    area_total = paneles_necesarios_redondeo * area_panel
+    print(f"Potencia diaria que genera un panel solar: {potencia_diaria: .2f} Kwh")
+    print(f"Potencia anual ")
