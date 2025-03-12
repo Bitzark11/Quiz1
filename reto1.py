@@ -14,4 +14,10 @@ def calcular_paneles_solares ():
     paneles_necesarios_redondeo = round (paneles_necesarios)
     area_total = paneles_necesarios_redondeo * area_panel
     print(f"Potencia diaria que genera un panel solar: {potencia_diaria: .2f} Kwh")
-    print(f"Potencia anual ")
+    print(f"Potencia anual generada por un panel solar: {potencia_anual: .2f} Kwh")
+    print(f"Numero de paneles necesarios (aplicando el redondeo): {paneles_necesarios_redondeo}")
+    print(f"Area total requerida para instalar los paneles: {area_total: .2f} m2")
+
+    #Llamada a la funcion inicial
+    calcular_paneles_solares ()
+    
