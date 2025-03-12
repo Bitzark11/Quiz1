@@ -19,5 +19,5 @@ def calcular_paneles_solares ():
     print(f"Area total requerida para instalar los paneles: {area_total: .2f} m2")
 
     #Llamada a la funcion inicial
-    calcular_paneles_solares ()
+calcular_paneles_solares ()
     
